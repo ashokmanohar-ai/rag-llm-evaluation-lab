@@ -1,0 +1,24 @@
+retrieval:
+  recall_at_5:
+    minimum: 0.80
+    max_regression: 0.05
+  precision_at_5:
+    minimum: 0.20
+    max_regression: 0.08
+generation:
+  completeness:
+    minimum: 0.80
+  groundedness:
+    minimum: 0.90
+  hallucination_rate:
+    maximum: 0.05
+citations:
+  correctness:
+    minimum: 0.90
+  completeness:
+    minimum: 0.90
+performance:
+  p95_latency_ms:
+    maximum: 3000
+    blocking: false
+

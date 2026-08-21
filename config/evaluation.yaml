@@ -1,0 +1,10 @@
+dataset_version: acme-support-v1
+runs_per_case: 1
+retrieval_cutoffs: [1, 3, 5]
+groundedness_claim_overlap: 0.65
+answer_relevance_minimum: 0.55
+insufficient_evidence_phrases:
+  - insufficient evidence
+  - insufficient knowledge
+  - available knowledge does not contain
+

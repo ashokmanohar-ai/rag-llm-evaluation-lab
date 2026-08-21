@@ -1,0 +1,11 @@
+{"id":"CIT-001","answer":"Employees receive 25 days of annual leave. [HR-ANNUAL-LEAVE-C001]","available_sources":["HR-ANNUAL-LEAVE-C001"],"expected_sources":["HR-ANNUAL-LEAVE"],"expected_valid":true}
+{"id":"CIT-002","answer":"Employees receive 25 days of annual leave. [SEC-INCIDENT-C001]","available_sources":["SEC-INCIDENT-C001","HR-ANNUAL-LEAVE-C001"],"expected_sources":["HR-ANNUAL-LEAVE"],"expected_valid":false}
+{"id":"CIT-003","answer":"Temporary passwords expire after 30 minutes. [IT-PASSWORD-RESET-C001]","available_sources":["IT-PASSWORD-RESET-C001"],"expected_sources":["IT-PASSWORD-RESET"],"expected_valid":true}
+{"id":"CIT-004","answer":"Temporary passwords expire after 30 minutes. [IT-PASSWORD-FAKE-C999]","available_sources":["IT-PASSWORD-RESET-C001"],"expected_sources":["IT-PASSWORD-RESET"],"expected_valid":false}
+{"id":"CIT-005","answer":"Incidents must be reported immediately. [SEC-INCIDENT-C001]","available_sources":["SEC-INCIDENT-C001"],"expected_sources":["SEC-INCIDENT"],"expected_valid":true}
+{"id":"CIT-006","answer":"Incidents must be reported immediately.","available_sources":["SEC-INCIDENT-C001"],"expected_sources":["SEC-INCIDENT"],"expected_valid":false}
+{"id":"CIT-007","answer":"MFA codes must never be shared. [IT-MFA-C001]","available_sources":["IT-MFA-C001"],"expected_sources":["IT-MFA"],"expected_valid":true}
+{"id":"CIT-008","answer":"The meal limit is £45. [FIN-EXPENSES-C001]","available_sources":["FIN-EXPENSES-C001"],"expected_sources":["FIN-EXPENSES"],"expected_valid":true}
+{"id":"CIT-009","answer":"The meal limit is £75. [FIN-EXPENSES-C001]","available_sources":["FIN-EXPENSES-C001"],"expected_sources":["FIN-EXPENSES"],"expected_valid":false}
+{"id":"CIT-010","answer":"The incident manager updates every 30 minutes. [SUP-ESCALATION-C001]","available_sources":["SUP-ESCALATION-C001"],"expected_sources":["SUP-ESCALATION"],"expected_valid":true}
+
