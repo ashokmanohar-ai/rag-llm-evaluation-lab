@@ -1,0 +1,16 @@
+providers:
+  deterministic-extractive-v1:
+    input_per_million: 0
+    output_per_million: 0
+  azure-openai-example:
+    input_per_million: null
+    output_per_million: null
+
+embedding_models:
+  local_default:
+    provider: sentence_transformers
+    model: all-MiniLM-L6-v2
+  ci_fallback:
+    provider: hashing
+    model: deterministic-hashing-v1
+

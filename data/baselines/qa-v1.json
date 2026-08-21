@@ -1,0 +1,70 @@
+{
+  "configuration": {
+    "chunking": {
+      "chunk_overlap": 100,
+      "chunk_size": 600,
+      "strategy": "recursive"
+    },
+    "context": {
+      "max_tokens": 6000,
+      "near_duplicate_threshold": 0.92
+    },
+    "embeddings": {
+      "dimensions": 384,
+      "model": "all-MiniLM-L6-v2",
+      "provider": "hashing"
+    },
+    "generation": {
+      "model": "deterministic-extractive-v1",
+      "prompt_version": "grounded-answer-v1",
+      "provider": "mock",
+      "temperature": 0
+    },
+    "reranking": {
+      "backend": "lexical",
+      "candidate_k": 20,
+      "enabled": true,
+      "final_k": 5,
+      "model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval": {
+      "dense_top_k": 20,
+      "exclude_statuses": [
+        "SUPERSEDED",
+        "DRAFT"
+      ],
+      "final_top_k": 5,
+      "minimum_score": 0.0,
+      "mode": "hybrid",
+      "rrf_constant": 60,
+      "sparse_top_k": 20
+    }
+  },
+  "created_at": "2026-08-21T14:18:07.838655+00:00",
+  "dataset": "data/evaluation/qa.jsonl",
+  "metrics": {
+    "cases": 25,
+    "citation_completeness": 1.0,
+    "citation_correctness": 1.0,
+    "completeness": 1.0,
+    "groundedness": 1.0,
+    "hallucination_rate": 0.0,
+    "hit_at_5": 1.0,
+    "latency_ms": 1.1791435597115196,
+    "latency_p50_ms": 1.1403069984226022,
+    "latency_p95_ms": 1.4155517987092023,
+    "latency_p99_ms": 1.476807038998231,
+    "mrr": 1.0,
+    "ndcg_at_5": 1.0,
+    "pass_rate": 1.0,
+    "passed_cases": 25,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.33333333333333326,
+    "precision_at_5": 0.2,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "stability": 1.0
+  },
+  "version": "rag-baseline-v1"
+}

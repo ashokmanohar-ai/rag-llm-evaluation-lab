@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-llm-evaluation-lab"
+version = "1.0.0"
+description = "Offline-first reference implementation for building and evaluating RAG systems."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Ashok Kumar Manohar" }]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "numpy>=2.0,<3",
+  "pydantic>=2.9,<3",
+  "pydantic-settings>=2.5,<3",
+  "PyYAML>=6.0.2,<7",
+  "rich>=13.9,<15",
+  "typer>=0.12,<1",
+  "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.13,<2",
+  "pytest>=8.3,<9",
+  "pytest-cov>=6,<7",
+  "ruff>=0.8,<1",
+  "types-PyYAML>=6.0.12",
+]
+ml = [
+  "faiss-cpu>=1.9,<2",
+  "rank-bm25>=0.2.2,<1",
+  "sentence-transformers>=3.3,<6",
+]
+azure = ["openai>=1.58,<3"]
+anthropic = ["anthropic>=0.40,<1"]
+observability = [
+  "arize-phoenix-otel>=0.6,<1",
+  "openinference-instrumentation>=0.1.20,<1",
+  "opentelemetry-api>=1.28,<2",
+  "opentelemetry-sdk>=1.28,<2",
+]
+pdf = ["pymupdf>=1.24,<2"]
+
+[project.scripts]
+rag-eval = "rag_eval.cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag_eval"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --cov=rag_eval --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
+markers = [
+  "security: security-focused validation",
+  "e2e: end-to-end validation",
+]
+
+[tool.coverage.run]
+omit = [
+  "src/rag_eval/embeddings/provider_embeddings.py",
+  "src/rag_eval/evaluation/judge/provider.py",
+  "src/rag_eval/generation/anthropic_provider.py",
+  "src/rag_eval/generation/azure_openai.py",
+  "src/rag_eval/generation/openai_provider.py",
+  "src/rag_eval/reranking/protocol.py",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+warn_unused_configs = true
+packages = ["rag_eval"]

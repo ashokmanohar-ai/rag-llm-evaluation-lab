@@ -1,0 +1,26 @@
+{"id":"RET-001","query":"How many days of annual leave do UK employees receive?","relevant_document_ids":["HR-ANNUAL-LEAVE"],"relevant_chunk_ids":["HR-ANNUAL-LEAVE-C001"]}
+{"id":"RET-002","query":"What is the annual leave carry-over limit?","relevant_document_ids":["HR-ANNUAL-LEAVE"],"relevant_chunk_ids":["HR-ANNUAL-LEAVE-C001"]}
+{"id":"RET-003","query":"When must I tell my manager that I am sick?","relevant_document_ids":["HR-SICK-LEAVE"],"relevant_chunk_ids":["HR-SICK-LEAVE-C001"]}
+{"id":"RET-004","query":"How long can sickness be self-certified?","relevant_document_ids":["HR-SICK-LEAVE"],"relevant_chunk_ids":["HR-SICK-LEAVE-C001"]}
+{"id":"RET-005","query":"How many remote working days are allowed?","relevant_document_ids":["HR-REMOTE-WORK"],"relevant_chunk_ids":["HR-REMOTE-WORK-C001"]}
+{"id":"RET-006","query":"When can a new employee join the pension plan?","relevant_document_ids":["HR-BENEFITS"],"relevant_chunk_ids":["HR-BENEFITS-C001"]}
+{"id":"RET-007","query":"What are the standard weekly working hours?","relevant_document_ids":["HR-WORKING-HOURS"],"relevant_chunk_ids":["HR-WORKING-HOURS-C001"]}
+{"id":"RET-008","query":"How soon must an expense claim be submitted?","relevant_document_ids":["FIN-EXPENSES"],"relevant_chunk_ids":["FIN-EXPENSES-C001"]}
+{"id":"RET-009","query":"At what amount is an expense receipt required?","relevant_document_ids":["FIN-EXPENSES"],"relevant_chunk_ids":["FIN-EXPENSES-C001"]}
+{"id":"RET-010","query":"What is the personal car mileage rate?","relevant_document_ids":["FIN-MILEAGE"],"relevant_chunk_ids":["FIN-MILEAGE-C001"]}
+{"id":"RET-011","query":"Where must business travel be booked?","relevant_document_ids":["TRAVEL-BOOKING"],"relevant_chunk_ids":["TRAVEL-BOOKING-C001"]}
+{"id":"RET-012","query":"What flight class applies below six hours?","relevant_document_ids":["TRAVEL-BOOKING"],"relevant_chunk_ids":["TRAVEL-BOOKING-C001"]}
+{"id":"RET-013","query":"What approval is needed for a high-risk destination?","relevant_document_ids":["TRAVEL-SAFETY"],"relevant_chunk_ids":["TRAVEL-SAFETY-C001"]}
+{"id":"RET-014","query":"How do I reset a forgotten password?","relevant_document_ids":["IT-PASSWORD-RESET"],"relevant_chunk_ids":["IT-PASSWORD-RESET-C001"]}
+{"id":"RET-015","query":"How long does a temporary password last?","relevant_document_ids":["IT-PASSWORD-RESET"],"relevant_chunk_ids":["IT-PASSWORD-RESET-C001"]}
+{"id":"RET-016","query":"Where do I request access to a system?","relevant_document_ids":["IT-ACCESS-REQUEST"],"relevant_chunk_ids":["IT-ACCESS-REQUEST-C001"]}
+{"id":"RET-017","query":"When is a standard laptop replaced?","relevant_document_ids":["IT-LAPTOP-REPLACE"],"relevant_chunk_ids":["IT-LAPTOP-REPLACE-C001"]}
+{"id":"RET-018","query":"What should I do with an unexpected MFA prompt?","relevant_document_ids":["IT-MFA"],"relevant_chunk_ids":["IT-MFA-C001"]}
+{"id":"RET-019","query":"Where may approved software be installed from?","relevant_document_ids":["IT-SOFTWARE"],"relevant_chunk_ids":["IT-SOFTWARE-C001"]}
+{"id":"RET-020","query":"How quickly must a security incident be reported?","relevant_document_ids":["SEC-INCIDENT"],"relevant_chunk_ids":["SEC-INCIDENT-C001"]}
+{"id":"RET-021","query":"What are Acme's four data classifications?","relevant_document_ids":["SEC-DATA-CLASS"],"relevant_chunk_ids":["SEC-DATA-CLASS-C001"]}
+{"id":"RET-022","query":"What should I do after entering credentials into a phishing page?","relevant_document_ids":["SEC-PHISHING"],"relevant_chunk_ids":["SEC-PHISHING-C001"]}
+{"id":"RET-023","query":"What hours does the UK service desk operate?","relevant_document_ids":["SUP-SERVICE-DESK"],"relevant_chunk_ids":["SUP-SERVICE-DESK-C001"]}
+{"id":"RET-024","query":"What makes an incident Priority 1?","relevant_document_ids":["SUP-PRIORITY"],"relevant_chunk_ids":["SUP-PRIORITY-C001"]}
+{"id":"RET-025","query":"How frequently are updates provided for a Priority 1 escalation?","relevant_document_ids":["SUP-ESCALATION"],"relevant_chunk_ids":["SUP-ESCALATION-C001"]}
+

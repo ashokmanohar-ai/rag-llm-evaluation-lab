@@ -1,0 +1,28 @@
+services:
+  api:
+    build: .
+    environment:
+      LLM_PROVIDER: mock
+      EMBEDDING_PROVIDER: hashing
+      OTEL_ENABLED: "false"
+      INDEX_REBUILD_API_KEY: ${INDEX_REBUILD_API_KEY:-local-rebuild-only}
+    ports:
+      - "8080:8080"
+    volumes:
+      - rag_reports:/app/reports
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /app/.rag_eval
+    security_opt:
+      - no-new-privileges:true
+
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    profiles: ["observability"]
+    ports:
+      - "6006:6006"
+
+volumes:
+  rag_reports:
+
