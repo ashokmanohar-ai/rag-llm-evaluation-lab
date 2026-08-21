@@ -8,7 +8,7 @@ Validated on 21 August 2026 with Python 3.12.13 in offline mode (`EMBEDDING_PROV
 |---|---|---|
 | Dependency resolution/install | PASS | Editable install resolved 39 packages in an isolated environment |
 | Ruff lint | PASS | No findings |
-| Ruff formatting | PASS | 122 files already formatted |
+| Ruff formatting | PASS | 123 files already formatted |
 | Strict MyPy | PASS | 73 source/test files, no issues |
 | Automated tests | PASS | 45 passed |
 | Measured coverage | PASS | 85.15%, threshold 80% |
@@ -27,6 +27,8 @@ Validated on 21 August 2026 with Python 3.12.13 in offline mode (`EMBEDDING_PROV
 | JSON/HTML/JUnit reports | PASS | Generated for every evaluation suite |
 | Dockerfile/Compose static review | PASS | Non-root runtime, health check, read-only Compose service, offline defaults |
 | Local Docker build | NOT RUN | Docker/Podman is not installed in the validation environment; GitHub Actions performs the container build |
+| GitHub Actions CI | PASS | Validate and Docker jobs completed successfully on pull request commit `8e33d47` |
+| GitHub Actions regression | PASS | Retrieval, QA, baseline comparison and artifact upload completed successfully |
 
 ## Negative validation
 
@@ -47,9 +49,8 @@ The committed baseline was produced by the CLI, not hand-authored. On the contro
 
 - Deterministic hashing and extractive mock generation validate controls, not semantic model quality.
 - `all-MiniLM-L6-v2`, FAISS, CrossEncoder and hosted provider paths require their optional extras and separate provider evaluations.
-- Docker execution is delegated to CI because the local validation host has no container engine.
+- Local Docker execution was unavailable; the equivalent container build completed successfully in GitHub Actions.
 - The FastAPI evaluation registry is in memory; production requires durable jobs, authentication, rate limiting and tenant-aware storage.
 - The corpus is intentionally small and synthetic. Results must be recalibrated on representative, reviewed enterprise datasets.
 
-Overall local status: **READY FOR CI REVIEW**.
-
+Overall validation status: **PASS — READY FOR REVIEW**.
