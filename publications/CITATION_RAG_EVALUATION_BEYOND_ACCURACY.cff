@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it using the metadata below."
+title: "RAG Evaluation Beyond Accuracy: Retrieval Quality, Groundedness, Citation Integrity and Failure Localization"
+type: article
+authors:
+  - family-names: Manohar
+    given-names: Ashok Kumar
+version: 1.0.0
+date-released: 2026-09-05
+url: "https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/blob/main/publications/RAG_EVALUATION_BEYOND_ACCURACY.md"
+repository-code: "https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab"
+license: MIT
+keywords:
+  - RAG Evaluation
+  - Retrieval-Augmented Generation
+  - Retrieval Quality
+  - Groundedness
+  - Faithfulness
+  - Citation Integrity
+  - Failure Localization
+  - Context Precision
+  - Context Recall
+  - Precision@K
+  - Recall@K
+  - MRR
+  - NDCG
+  - Hybrid Search
+  - Reranking
+  - AI Quality Engineering
+  - LLM Evaluation
+  - CI/CD
+  - Quality Gates
+  - AI Observability
+abstract: >-
+  An evidence-driven Quality Engineering framework for evaluating
+  Retrieval-Augmented Generation beyond final-answer accuracy. The work defines
+  a Corpus-Retrieve-Rank-Context-Generate-Cite-Gate model spanning ingestion,
+  chunking, dense and sparse retrieval, hybrid fusion, reranking, context
+  precision and recall, groundedness, faithfulness, required-fact coverage,
+  abstention, citation existence and support, freshness, authorization, prompt
+  injection, failure localization, latency, token and cost evidence, repeated-run
+  stability, baseline regression, observability and risk-based quality gates.
