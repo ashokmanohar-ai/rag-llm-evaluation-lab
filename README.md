@@ -7,6 +7,19 @@ An enterprise-style reference implementation for building and systematically eva
 [![CI](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/ci.yml)
 [![Offline RAG Regression](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/rag-regression.yml/badge.svg)](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/rag-regression.yml)
 
+## Recruiter quick tour
+
+> **60-second decision:** this repository proves end-to-end RAG evaluation engineering—separating retrieval, context, generation, citation, cost, latency, and regression quality instead of judging only whether an answer sounds fluent.
+
+| Recruiter signal | Evidence in this repository |
+| --- | --- |
+| Evaluation depth | Precision@K, Recall@K, MRR, NDCG, context sufficiency, groundedness, hallucination, citation accuracy, latency, tokens, and cost |
+| Engineering design | Hybrid BM25 + dense retrieval, optional reranking, bounded context, provider adapters, versioned datasets, and hard quality gates |
+| Reproducibility | Credential-free evaluation paths, JSON/HTML/JUnit evidence, Docker, CI, and measured baselines |
+| Interview path | [Architecture](docs/architecture.md) → [validation report](docs/validation-report.md) → [2- and 5-minute walkthrough](docs/interview-walkthrough.md) |
+
+**Five-minute proof:** follow the [quick start](#quick-start), run the retrieval and QA datasets, then compare the generated case-level evidence with the configured release thresholds.
+
 This repository demonstrates both halves of production RAG engineering:
 
 - Build: safe ingestion, versioned metadata, fixed/recursive chunking, dense retrieval, BM25, Reciprocal Rank Fusion, optional reranking, bounded context, grounded generation and traceable citations.
