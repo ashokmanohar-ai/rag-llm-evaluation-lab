@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it using the metadata below."
+title: "RAG Quality Engineering: A Practical Framework for Evaluating Retrieval-Augmented Generation Systems"
+type: article
+authors:
+  - family-names: Manohar
+    given-names: Ashok Kumar
+version: 1.0.0
+date-released: 2026-09-05
+url: "https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/blob/main/WHITEPAPER.md"
+repository-code: "https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab"
+license: MIT
+keywords:
+  - Retrieval-Augmented Generation
+  - RAG
+  - Quality Engineering
+  - LLM Evaluation
+  - Retrieval Evaluation
+  - Groundedness
+  - Hallucination Testing
+  - Citation Evaluation
+  - AI Quality Engineering
+  - Generative AI
+  - AI Governance
+  - RAG Security
+abstract: >-
+  An evidence-driven Quality Engineering framework for evaluating
+  Retrieval-Augmented Generation systems across retrieval quality, context
+  quality, groundedness, hallucination, citation integrity, security,
+  authorization, latency, cost, stability and regression quality. The work
+  advocates deterministic-first evaluation, versioned datasets, traceable
+  evidence, adversarial testing and CI/CD quality gates.
