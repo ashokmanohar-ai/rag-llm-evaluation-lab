@@ -7,6 +7,16 @@ An enterprise-style reference implementation for building and systematically eva
 [![CI](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/ci.yml)
 [![Offline RAG Regression](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/rag-regression.yml/badge.svg)](https://github.com/ashokmanohar-ai/rag-llm-evaluation-lab/actions/workflows/rag-regression.yml)
 
+## 📄 Technical White Paper
+
+**[RAG Quality Engineering: A Practical Framework for Evaluating Retrieval-Augmented Generation Systems](WHITEPAPER.md)**
+
+A practitioner-focused white paper on evaluating RAG as a layered engineering system rather than judging only final-answer fluency. It covers retrieval metrics, chunking, hybrid search, reranking, context sufficiency, groundedness, hallucination, citation integrity, prompt injection, authorization, freshness, performance, cost, observability, regression testing and CI/CD quality gates.
+
+> **Core principle:** prove that the right evidence was retrieved, authorized, current, preserved in context, correctly used by the model, and traceable through valid citations.
+
+Citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
 ## Recruiter quick tour
 
 > **60-second decision:** this repository proves end-to-end RAG evaluation engineering—separating retrieval, context, generation, citation, cost, latency, and regression quality instead of judging only whether an answer sounds fluent.
